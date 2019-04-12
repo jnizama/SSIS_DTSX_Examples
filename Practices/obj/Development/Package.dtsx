@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="4/12/2019 3:00:56 PM"
@@ -871,7 +871,7 @@
           DTS:ExecutableType="Attunity.CdcControlTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Mark Processed Range"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <CDCControlTask
@@ -896,7 +896,7 @@
           DTS:ExecutableType="Attunity.CdcControlTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Tarea de control de CDC"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <CDCControlTask
@@ -921,7 +921,7 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate Table in Target Database"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1281,7 +1281,7 @@
           DTS:ExecutableType="Attunity.CdcControlTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Mark Initial Load End"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <CDCControlTask
@@ -1306,7 +1306,7 @@
           DTS:ExecutableType="Attunity.CdcControlTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Mark Initial Load Start"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <CDCControlTask
