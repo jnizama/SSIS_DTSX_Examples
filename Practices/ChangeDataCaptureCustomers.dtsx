@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ZXNLAP046"
   DTS:CreatorName="ZXNLAP046\Jorge"
-  DTS:DTSID="{25B71BD9-1616-460B-B25D-14A61EAC51A2}"
+  DTS:DTSID="{41386740-62C3-45C7-B43E-C880896535A2}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.1100.123"
   DTS:LocaleID="10250"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="ChangeDataCaptureCustomers"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{25E3F8C0-D709-4E8B-A84D-491E42FB996F}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{15A4A34E-1FE0-4285-96A8-AD9CBF63A0CE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1357,80 +1357,21 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="183,42"
-          Id="Package\Initial Load Data\Mark Initial Load Start"
-          TopLeft="64,18" />
-        <EdgeLayout
-          Id="Package\Initial Load Data.PrecedenceConstraints[Restricción]"
-          TopLeft="157.5,60">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46"
-              Start="0,0"
-              End="0,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="180,42"
+          Id="Package\Incremental Load Data\Extract Modified Data"
+          TopLeft="111.111111111111,171.111111111111" />
         <NodeLayout
-          Size="137,42"
-          Id="Package\Initial Load Data\Carga Inicial"
-          TopLeft="91,106" />
-        <EdgeLayout
-          Id="Package\Initial Load Data.PrecedenceConstraints[Restricción 1]"
-          TopLeft="159.5,148">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63"
-              Start="0,0"
-              End="0,55.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Initial Load Data\Mark Initial Load End"
-          TopLeft="70,211" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="342,308"
-          Size="342,351"
-          Id="Package\Initial Load Data"
-          TopLeft="47,17" />
-        <NodeLayout
-          Size="243,42"
-          Id="Package\Incremental Load Data\Truncate Table in Target Database"
-          TopLeft="88,19" />
+          Size="185,42"
+          Id="Package\Incremental Load Data\Mark Processed Range"
+          TopLeft="108.888888888889,252.222222222222" />
         <NodeLayout
           Size="195,42"
           Id="Package\Incremental Load Data\Tarea de control de CDC"
           TopLeft="100,88" />
         <NodeLayout
-          Size="180,42"
-          Id="Package\Incremental Load Data\Extract Modified Data"
-          TopLeft="111.111111111111,171.111111111111" />
+          Size="243,42"
+          Id="Package\Incremental Load Data\Truncate Table in Target Database"
+          TopLeft="88,19" />
         <EdgeLayout
           Id="Package\Incremental Load Data.PrecedenceConstraints[Restricción]"
           TopLeft="209.5,61">
@@ -1487,10 +1428,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Incremental Load Data\Mark Processed Range"
-          TopLeft="108.888888888889,252.222222222222" />
         <EdgeLayout
           Id="Package\Incremental Load Data.PrecedenceConstraints[Restricción 2]"
           TopLeft="201.25,213.111111111111">
@@ -1520,48 +1457,32 @@
           Size="365,399"
           Id="Package\Incremental Load Data"
           TopLeft="420,17" />
-      </GraphLayout>
-    </LayoutInfo>
-  </Package>
-  <TaskHost
-    design-time-name="Package\Initial Load Data\Carga Inicial">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,42"
-          Id="Package\Initial Load Data\Carga Inicial\Origen de ADO NET"
-          TopLeft="123,33" />
+          Size="137,42"
+          Id="Package\Initial Load Data\Carga Inicial"
+          TopLeft="91,106" />
         <NodeLayout
-          Size="176,42"
-          Id="Package\Initial Load Data\Carga Inicial\Destino de ADO NET"
-          TopLeft="228,149" />
+          Size="179,42"
+          Id="Package\Initial Load Data\Mark Initial Load End"
+          TopLeft="70,211" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Initial Load Data\Mark Initial Load Start"
+          TopLeft="64,18" />
         <EdgeLayout
-          Id="Package\Initial Load Data\Carga Inicial.Paths[Salida de origen de ADO NET]"
-          TopLeft="209,75">
+          Id="Package\Initial Load Data.PrecedenceConstraints[Restricción]"
+          TopLeft="157.5,60">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="107,74"
+              EndConnector="0,46"
               Start="0,0"
-              End="107,66.5">
+              End="0,38.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33"
-                    Point2="0,37"
-                    Point3="4,37" />
-                  <mssgle:LineSegment
-                    End="103,37" />
-                  <mssgle:CubicBezierSegment
-                    Point1="103,37"
-                    Point2="107,37"
-                    Point3="107,41" />
-                  <mssgle:LineSegment
-                    End="107,66.5" />
+                    End="0,38.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1570,25 +1491,38 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Initial Load Data.PrecedenceConstraints[Restricción 1]"
+          TopLeft="159.5,148">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="342,308"
+          Size="342,351"
+          Id="Package\Initial Load Data"
+          TopLeft="47,17" />
       </GraphLayout>
     </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Initial Load Data\Carga Inicial\Origen de ADO NET">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Initial Load Data\Carga Inicial\Destino de ADO NET">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
+  </Package>
   <TaskHost
     design-time-name="Package\Incremental Load Data\Extract Modified Data">
     <LayoutInfo>
@@ -1736,7 +1670,23 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Incremental Load Data\Extract Modified Data\Customer_Upd">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Incremental Load Data\Extract Modified Data\Origen de CDC">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Incremental Load Data\Extract Modified Data\Customer_Del">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1751,8 +1701,58 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Initial Load Data\Carga Inicial">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Initial Load Data\Carga Inicial\Origen de ADO NET"
+          TopLeft="123,33" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Initial Load Data\Carga Inicial\Destino de ADO NET"
+          TopLeft="228,149" />
+        <EdgeLayout
+          Id="Package\Initial Load Data\Carga Inicial.Paths[Salida de origen de ADO NET]"
+          TopLeft="209,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="107,74"
+              Start="0,0"
+              End="107,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="4,37" />
+                  <mssgle:LineSegment
+                    End="103,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="103,37"
+                    Point2="107,37"
+                    Point3="107,41" />
+                  <mssgle:LineSegment
+                    End="107,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Incremental Load Data\Extract Modified Data\Customer_Upd">
+    design-time-name="Package\Initial Load Data\Carga Inicial\Destino de ADO NET">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1760,7 +1760,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Incremental Load Data\Extract Modified Data\Customer_Del">
+    design-time-name="Package\Initial Load Data\Carga Inicial\Origen de ADO NET">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
